@@ -19,13 +19,148 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
 
     <style>
-        .manrope{
+        .manrope {
             font-family: 'Manrope', sans-serif;
         }
     </style>
 </head>
 
-<body>
+<body class="manrope">
+
+    <!-- NavBar Section -->
+    <header class="lg:py-14 lg:px-32">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <h1 class="text-[#131318] text-4xl font-extrabold">Hockey<span class="text-[#FF4240]">'</span>s</h1>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a href="" class="text-[#FF4240] font-bold">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Pages</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <img class="lg:px-6" src="Images/search.png" alt="">
+                <a class="bg-[#FF4240] text-[#FFF] p-2 lg:px-6 lg:py-4 rounded-lg">Get Ticket</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Banner section -->
+        <section class="lg:px-32 rounded-2xl m-5">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/2.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="Images/3.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="Images/4.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="bg-black text-white rounded-2xl mt-2 p-8 lg:h-[23vh] lg:w-6/12 mx-auto lg:-translate-y-40 lg:mr-5 space-y-4">
+                <h3 class="text-2xl font-extrabold ">Meet all the heroes from the field</h3>
+                <p class="text-xs font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam <br>
+                    turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+        </section>
+
+
+        <!-- Professional Hockeys Club -->
+        <section class="lg:px-32 rounded-2xl mt-5">
+            <div class="text-center space-y-6">
+                <h2 class="text-4xl font-extrabold">Professional Hockeys Club</h2>
+                <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br>
+                    dolor. Purus urna in sit nullam proin. </p>
+            </div>
+            <div class="lg:flex">
+                <div class="card w-96 bg-base-100">
+                    <figure class="px-10 pt-10">
+                        <div class="radial-progress text-[#FF4240]" style="--value:87;" role="progressbar">87%</div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Prayer Facility</h2>
+                      <p>Amet consectetur. Condimentum <br>dignissim adipiscing .</p>
+                    </div>
+                  </div>
+                  <div class="card w-96 bg-base-100">
+                    <figure class="px-10 pt-10">
+                        <div class="radial-progress text-[#49D293]" style="--value:95;" role="progressbar">95%</div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Prayer Facility</h2>
+                      <p>Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+                    </div>
+                  </div>
+                  <div class="card w-96 bg-base-100">
+                    <figure class="px-10 pt-10">
+                        <div class="radial-progress text-[#FFB546]" style="--value:90;" role="progressbar">90%</div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Prayer Facility</h2>
+                      <p>Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+                    </div>
+                  </div>
+                  <div class="card w-96 bg-base-100">
+                    <figure class="px-10 pt-10">
+                        <div class="radial-progress text-[#4C8DF1]" style="--value:80;" role="progressbar">80%</div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Prayer Facility</h2>
+                      <p>Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+                    </div>
+                  </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
 
 </body>
 
